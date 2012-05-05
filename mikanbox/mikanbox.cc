@@ -3,6 +3,7 @@
 class MikanBox {
 public:
   MikanBox();
+  ~MikanBox();
   void Add(int addmikan);
   void Del(int delmikan);
   void Empty();
@@ -16,6 +17,11 @@ private:
 MikanBox::MikanBox()
 {
   Empty();
+}
+
+MikanBox::~MikanBox()
+{
+  printf("みかん箱オブジェクトの任意完了");
 }
 
 void MikanBox::Add(int addmikan)
