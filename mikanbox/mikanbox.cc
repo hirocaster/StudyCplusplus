@@ -2,6 +2,7 @@
 
 class MikanBox {
 public:
+  MikanBox();
   void Add(int addmikan);
   void Del(int delmikan);
   void Empty();
@@ -11,6 +12,11 @@ public:
 private:
   int total;
 };
+
+MikanBox::MikanBox()
+{
+  Empty();
+}
 
 void MikanBox::Add(int addmikan)
 {
